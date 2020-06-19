@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Here!</title>
+<link rel="stylesheet" href="frontpage.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script>
+
+	function validate(){
+
+		var name = document.myform.name.value;
+		var city = document.myform.city.value;
+		var pincode = document.myform.pincode.value;
+		var mobile = document.myform.mobile.value;
+		var sex = document.myform.sex.value;
+	
+		if(name==null || name=="" || city=="" || mobile=="" || pincode=="" || sex==""){
+	
+			alert("Please fill all the details");
+			return false;
+			
+		}
+	}
+
+</script>
+
+
+
+</head>
+<body>
+
+<div id="main-header" >
+
+    	<header class="head" >
+       
+       		<div class="logohead">
+       			<h4 style="color: white"><img src="logo.png" style="width:120px;">COVID-19 RISK SCANNING SYSTEM </h4>
+       		</div>
+            
+        </header>
+</div>
+    <br />
+    <br />
+    
+<div id="main-div">
+
+	<div class="container-fluid" id="form-section">
+	
+	<form name="myform" action="ControlServlet" method="get" onsubmit="return validate()">
+
+	
+	  <div class="form-group"class="Form" >
+		<h2 >Enter The Details</h2>
+	    <label >Name</label>
+	    	<input type="text" name="name"  >
+	    <label>City</label>
+	   		 <input type="text" name="city">
+	    <label>Pincode</label>
+	    	<input type="text" name="pincode">
+	    <label>Mobile</label>
+	    	<input type="text" name="mobile" >
+	    <label>Sex</label>
+		    <div class="mylist"> 
+		    	<select class="list" name="sex">
+		    		<option disabled selected value>Select</option>
+	                <option value = "Male">Male</option>
+	               <option value = "Female">Female</option>
+	               <option value = "Others">Others</option>
+	             </select>
+	        </div>
+		    	<br>
+		    	<div class="btnstyle">
+		    	 	<button type="submit" class="btn btn-primary">Submit</button>
+		 			<br />
+		 	 		<small id="emailHelp" class="form-text text-muted">We'll never share your Details with anyone else.</small>
+		  		</div>
+		</div>
+	  	</form>
+	 </div>
+	  
+	  
+	 
+	  
+</div>
+
+<br>
+<br>
+<div id="main-footer" style="background-color: #08303f">
+    <br />
+    <br />
+    <div id="two-img">
+        <img border="0" src="two.png"
+             alt="one.png" id="two-img">
+
+    </div>
+    <br />
+    <br />
+    <p style="color:white;font-family:'Adobe Arabic';font-size:20px;text-align:center">&copy;All Rights Reserved 2020 MBtesting.com<p>
+</div>
+</body>
+</html>

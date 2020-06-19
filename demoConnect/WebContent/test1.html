@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <link rel="stylesheet" href="trial.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid" style="margin-top:15px">
+        
+        <header class="head">
+            <img src="logo.png" style="width:120px;margin-left:100px" />
+        </header>
+        <div id="wrapper">
+
+            <!--- <h1>Give The Response Below!</h1>-->
+            <!-- <p>Take this questionnaire to find out!</p>-->
+            <br />
+            <br />
+
+            <form action="servlet2" id="quiz" style="padding:20px">
+
+
+                <!-- Question 1 -->
+                <div class="ques">
+                    <h4>Is Your Current Body Temperature More Than 100 Degrees?</h4>
+                    <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+                    <!-- The value is which answer the choice corresponds to. -->
+                    <label>
+                        <input type="radio" name="q1" value="yes" required>
+                        YES.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q1" value="no" required>
+                        NO.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+
+                <!-- Question 2 -->
+                <div class="ques">
+                    <h4>Is Your Age More Than 45?</h4>
+                    <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+                    <label>
+                        <input type="radio" name="q2" value="yes" required>
+                        YES.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q2" value="no" required>
+                        NO.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+
+                <!-- Question 3 -->
+                <div class="ques">
+
+                    <h4>Do You Have Any kind of  the Health Condition like (Diabetes,Heart disease,Lung Disease,High Blood Pressure,)?</h4>
+                    <!-- Choices for the third question -->
+                    <label>
+                        <input type="radio" name="q3" value="yes" required>
+                        YES.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q3" value="no" required>
+                        NO.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+                <!-- Question 4 -->
+
+                <div class="ques">
+                    <h4> Are You Experiencing Sore Throat? </h4>
+                    <!-- Choices for the fourth question -->
+                    <label>
+                        <input type="radio" name="q4" value="yes" required>
+                        YES.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q4" value="no" required>
+                        NO.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+                <!-- question 5-->
+                <div class="ques">
+                    <h4>Are You Experiencing Cough / DryCough?</h4>
+                    <!-- Choices for the fourth question -->
+                    <label>
+                        <input type="radio" name="q5" value="yes" required>
+                        Yes.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q5" value="no" required>
+                        No.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+                <!--Question 6-->
+                <div class="ques">
+                    <h4>Are You Experiencing Difficulty in Breathing?</h4>
+                    <!-- Choices for the fourth question -->
+                    <label>
+                        <input type="radio" name="q6" value="yes" required>
+                        Yes.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q6" value="no" required>
+                        No.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+                <!--Question 7-->
+                <div class="ques">
+                    <h4>Are You Feeling Tired/Weak?</h4>
+                    <!-- Choices for the fourth question -->
+                    <label>
+                        <input type="radio" name="q7" value="yes" required>
+                        Yes.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q7" value="no" required>
+                        No.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+                <!--Question 8-->
+                <div class="ques">
+                    <h4> Do You Have Any Travel History In Past 14 days? </h4>
+                    <!-- Choices for the fourth question -->
+                    <label>
+                        <input type="radio" name="q8" value="yes" required>
+                        Yes.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q8" value="no" required>
+                        No.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+
+                <!--question 9-->
+
+                <div class="ques">
+                    <h4> Have you came in close contact with a confirmed COVID-19 patient in last 14 days ? </h4>
+                    <!-- Choices for the fourth question -->
+                    <label>
+                        <input type="radio" name="q9" value="confirm" required>
+                        Yes.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q9" value="no" required>
+                        No.
+                    </label><br />
+
+                </div>
+
+                <br />
+                <br />
+
+                <!--question 10-->
+
+                <div class="ques">
+                    <h4> Is Your Symptoms gets worst In Last 48 Hr.?</h4>
+                    <!-- Choices for the fourth question -->
+                    <label>
+                        <input type="radio" name="q10" value="yes" required>
+                        YES.
+                    </label><br />
+                    <label>
+                        <input type="radio" name="q10" value="no" required>
+                        No.
+                    </label><br />
+
+                </div>
+                <br />
+                <br />
+				<div class="buttonstyle">
+	                <button type="submit" id="submit" ><span>Submit</span></button>
+	                <button type="reset" id="reset">Reset</button>
+                </div>
+            </form>
+            <br />
+            <br />
+
+        </div>
+
+
+
+    </div>
+    <footer style="background-color:#08303f">
+        <br />
+        <br />
+        <img src="one.png" id="one-img" />
+        <br />
+        <br />
+        <p style="color:black;font-family:'Adobe Arabic';font-size:30px;text-align:center">&copy;All Rights Reserved 2020 MBtesting.com<p>
+
+    </footer>
+</body>
+</html>
